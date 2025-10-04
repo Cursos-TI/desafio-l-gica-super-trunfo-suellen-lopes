@@ -53,10 +53,10 @@ int main(){
     // Exibição dos dados cadastrados e cálculos
     printf("\n\n Dados das Cartas Cadastradas\n");
 
-    printf("\nCarta1 (%s): \n", carta1.Nome_Cidade);
+    printf("\nCarta 1 (%s):\n", carta1.Nome_Cidade);
     exibirDadosCarta(&carta1);
 
-    printf("\nCarta 2 (%s): \n", carta2.Nome_Cidade);
+    printf("\nCarta 2 (%s):\n", carta2.Nome_Cidade);
     exibirDadosCarta(&carta2);
 
     // Desafio final: Comparação das Cartas (Batalha Completa)
@@ -163,7 +163,7 @@ void compararCartas(const struct CartaSuperTrunfo *c1, const struct CartaSuperTr
 
     // População ( Maior vence)
     // Conversão para long double para maior precisão na comparação de numeros grandes
-    resultado = ((long double)c1->populcao > (long double)c2->populacao);
+    resultado = ((long double)c1->populacao > (long double)c2->populacao);
     printf(" - Populção: Carta %d venceu (C1: %lu, C2: %lu)\n",
            resultado ? 1: 2, c1->populacao, c2->populacao);
 
